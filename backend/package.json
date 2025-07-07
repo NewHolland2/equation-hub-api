@@ -1,0 +1,47 @@
+{
+  "name": "equation-hub-backend",
+  "version": "1.0.0",
+  "description": "Backend API para EquationHub - Plataforma de cálculos matemáticos",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "install-deps": "npm install express cors helmet morgan express-rate-limit express-validator compression dotenv swagger-jsdoc swagger-ui-express mathjs ml-regression simple-statistics nodemon"
+  },
+  "keywords": [
+    "math",
+    "calculator", 
+    "equations",
+    "machine-learning",
+    "api",
+    "nodejs",
+    "express"
+  ],
+  "author": "Felipi Otto",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^6.7.1",
+    "express-validator": "^7.0.1",
+    "compression": "^1.7.4",
+    "dotenv": "^16.3.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
+    "mathjs": "^11.9.1",
+    "ml-regression": "^6.0.1",
+    "simple-statistics": "^7.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.42.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

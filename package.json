@@ -1,0 +1,40 @@
+{
+  "name": "equation-hub-platform",
+  "version": "1.0.0",
+  "description": "Plataforma completa de cálculos matemáticos - Frontend + Backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "npm run install-all",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "echo \"Rodando testes...\" && cd backend && npm test",
+    "backend-only": "cd backend && npm run dev",
+    "frontend-only": "cd frontend && npm start"
+  },
+  "keywords": [
+    "math",
+    "calculator",
+    "equations",
+    "machine-learning",
+    "react",
+    "nodejs",
+    "express"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/equation-hub-platform"
+  }
+}
